@@ -1,0 +1,43 @@
+OOP - Week 3
+
+Reinhard Javera Maheswara
+00000077732
+
+1. Jelaskan multidimensional arrays dan berikan contoh.
+2. Sebutkan dan jelaskan 13 method-method string dalam Java
+3. Sebutkan 2 keuntungan Immutability dalam Java. 
+
+Jawaban:
+
+
+1. Array multidimensional adalah struktur data yang menyimpan elemen-elemen dalam bentuk tabel dengan dua atau lebih dimensi. Dalam konteks pemrograman, array multidimensional memungkinkan penyimpanan data dalam bentuk matriks atau tabel yang memiliki baris dan kolom.
+
+Contoh: 
+public class MultidimensionalArrayExample {
+    public static void main(String[] args) {
+        int[][] matrix = {
+            {1, 2, 3},
+            {4, 5, 6}
+        };
+
+        System.out.println("Elemen pada baris 0, kolom 1: " + matrix[0][1]); // Output: 2
+        System.out.println("Elemen pada baris 1, kolom 2: " + matrix[1][2]); // Output: 6
+    }
+}
+
+2. - length(): mengembalikan panjang (jumlah karakter) dari string
+- charAt(int index): mengembalikan karakter di posisi tertentu dalam string
+- concat(String str): menggabungkan dua string
+- substring(int beginIndex): mengembalikan substring mulai dari indeks tertentu hingga akhir string
+- substring(int beginIndex, int endIndex): mengembalikan substring dari indeks mulai hingga indeks akhir yang ditentukan
+- toLowerCase(): mengubah string menjadi huruf kecil
+- toUpperCase(): mengubah string menjadi huruf besar
+- trim(): menghapus spasi di awal dan akhir string
+- replace(char oldChar, char newChar): menggantikan semua kemunculan karakter tertentu dengan karakter lain
+- split(String regex): memecah string menjadi array substring berdasarkan ekspresi reguler tertentu
+- indexOf(String str): mengembalikan indeks pertama dari subtring tertentu
+- lastIndexOf(String str): mengembalikan indeks terakhir dari subtring tertentu
+- equals(String anotherString): memeriksa apakah dua string sama
+
+3. - Keamanan (Security): Karena objek yang tidak dapat diubah, maka nilai suatu objek tidak dapat dimodifikasi setelah dibuat. Hal ini mengurangi potensi perubahan yang tidak diinginkan dan memungkinkan pengkodean yang lebih aman.
+- Thread Safety: Objek yang tidak dapat diubah adalah thread-safe secara alami. Jika suatu objek dapat diakses oleh beberapa thread tanpa khawatir perubahan nilai, maka pengelolaan thread menjadi lebih mudah. Tidak perlu melakukan sinkronisasi eksternal untuk melindungi objek dari akses bersamaan. Ini dapat meningkatkan kinerja dan mengurangi kompleksitas implementasi dalam lingkungan konkurensi.
